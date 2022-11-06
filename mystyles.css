@@ -1,0 +1,48 @@
+body 
+{
+    background-color: rgb(255, 179, 179);
+    
+   text-align: center;
+}
+h1
+{   padding-top: 3cm;
+    font-family: "Brush Script MT", cursive;
+    font-size: xx-large;
+}
+select
+{
+    background-color: #df0606;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer
+}
+.boala
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1ch;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 15cm;
+    background: rgb(255, 205, 205);
+    padding: 20px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+.descriere
+{   display: flex;
+    flex-direction: column;
+    background: rgb(255, 147, 147);
+    padding: 10px;
+    border-radius: 7px;
+    width: 455px;
+    height: auto;
+    margin: 5px;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}

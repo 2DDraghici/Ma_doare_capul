@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma doare capul</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <link rel="stylesheet" type="text/css" href="mystyles.css" media="screen" />
+</head>
+<body>
+    <h1>Ma doare capul</h1>
+    <div class="content">
+
+        <form>
+            <select id = "dropdown" onchange="selectedSubjectName()"  >
+            <option value="" disabled selected hidden>Unde te doare?</option>
+            <option value = "Migrena" >În față</option>
+            <option value = "Cefaleea de tensiune">În spatele ochiului </option>
+            <option value = "Sinuzită" >Zona sinusală</option>
+            <option value = "șomaj" >Peste tot</option>
+            <option value = "Cefaleea în ciorchine" >Prin părți</option>
+          
+            </select>
+            </form>
+        <div class="raspunsuri" id="raspuns">
+            
+        </div>
+
+    </div>
+    
+
+    <script>
+
+
+
+            const firebaseConfig = {
+                apiKey: "AIzaSyA_KGxCs29FkhKGIZU0ePLyZ_P74gUbMdU",
+                authDomain: "medicalhelp-a3d1c.firebaseapp.com",
+                projectId: "medicalhelp-a3d1c",
+                storageBucket: "medicalhelp-a3d1c.appspot.com",
+                messagingSenderId: "384445572060",
+                appId: "1:384445572060:web:5f8a6082587239a5dee519",
+                measurementId: "G-TQKG85QDPE"
+            };
+
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            const db = firebase.firestore()
+            db.settings({timestampsInSnapshots: true});
+           
+</script>
+    <script src="app.js"></script>
+</body>
+</html>
